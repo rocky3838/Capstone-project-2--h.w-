@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Contact us</title>
+
+</head>
+
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #fcbebe;
+    }
+
+    .topnav a {
+        float: left;
+        color: rgb(159, 9, 9);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 19px;
+    }
+
+    .topnav a:hover {
+        background-color: #f78e8e;
+        color: rgb(110, 26, 26);
+    }
+</style>
+
+
+<body>
+
+    <div class="topnav">
+        <a href="Home.html">Home</a>
+        <a href="About.html">About </a>
+        <a href="Contact.html">Contact us</a>
+        <a href="Gallery.html">Gallery</a>
+    </div>
+<body>
+
+    
+    <marquee>
+        <h2>The wonderous foods that are sure to make your mouth watery...</h2>
+    </marquee>
+    <div>
+
+        <img class=" my_slider" src="slider.webp" height="200px" width="px">
+
+        <img class=" my_slider" img src="slider 1.webp" height="200px" width="px">
+
+        <img class=" my_slider" src="slider 2.webp"  height="200px" width="px">
+
+    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Six Images Example</title>
+        <style>
+            .image-gallery {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .image-gallery img {
+                width: 200px;
+                height: auto;
+                border: 2px solid #ccc;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>some other cars</h1>
+        <div class="image-gallery">
+            <img src="gallery extra 1.png" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+            <img src="image4.jpg" alt="Image 4">
+            <img src="image5.jpg" alt="Image 5">
+            <img src="image6.jpg" alt="Image 6">
+        </div>
+    </body>
+
+    </html>
+
+    <script>
+
+        var my_index = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("my_slider");
+
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            my_index++;
+            if (my_index > x.length) { my_index = 1 }
+            x[my_index - 1].style.display = "block";
+            setTimeout(carousel, 4000);
+        }
+
+    </script>
+</body>
+
+
+</html>
+</body>
